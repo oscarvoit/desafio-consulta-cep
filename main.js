@@ -8,7 +8,7 @@ const preencheDados = resultado => {
   }
 }
 
-cep.addEventListener('blur', (e) => {
+const blurFunction = () => {
   let search = cep.value.replace('-', '')
   const options = {
     method: 'GET',
@@ -16,9 +16,10 @@ cep.addEventListener('blur', (e) => {
     cache: 'default',
   }
 
-  fetch(`https://viacep.com.br/ws/${search}/json/`, options)
+  const url = `https://viacep.com.br/ws/${search}/json/`
+
+  fetch(url, options)
     .then(response => response.json())
     .then(data => preencheDados(data))
     .catch(e => console.log('Deu erro: ' + e.message))
-
-})
+}

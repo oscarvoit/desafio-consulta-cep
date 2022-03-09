@@ -1,0 +1,40 @@
+* {
+  border: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: green;
+  margin: 15px;
+}
+
+h3 {
+  margin: 15px;
+}
+
+form label {
+  margin-left: 15px;
+}
+
+form input {
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin-top: 7px;
+}
+
+form div:nth-child(1) input {
+  width: 80px;
+}
+
+form div:nth-child(2) input {
+  width: 350px;
+}
+
+form div:nth-child(3) input,
+form div:nth-child(4) input {
+  width: 200px;
+}
+
+form div:nth-child(5) input {
+  width: 30px;
+}

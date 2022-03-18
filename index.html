@@ -14,29 +14,31 @@
     <form>
       <div>
         <label> Cep: </label>
-        <input>
+        <input id="cep" maxlength="9" onblur="blurFunction()">
       </div>
       <div>
         <label>Rua: </label>
-        <input>
+        <input id="logradouro">
       </div>
       <div>
         <label>Bairro:</label>
-        <input>
+        <input id="bairro">
       </div>
       <div>
         <label>Cidade:</label>
-        <input>
+        <input id="localidade">
       </div>
       <div>
         <label>Estado:</label>
-        <input>
+        <input id="uf">
       </div>
       <div>
         <label>IBGE: </label>
-        <input>
+        <input id="ibge">
       </div>
     </form>
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
